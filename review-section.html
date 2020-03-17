@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="myscripts.js"></script>
+    <title>Review</title>
+</head>
+
+<body>
+    <div id="containerNav">
+        <header class="header">
+            <h1 class="logo"><a href="index.html">Jacqui Shannon</a></h1>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Unit 1, Outcome 1</a></li>
+                <li><a href="review.html">Unit 1, Review</a></li>
+                <li><a href="unit2.html">Unit 2</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+    </div>
+    <div id="containerMain">
+        
+    </div>
+    <section>
+        <article>
+            <h2>Scenario</h2>
+            <h3>Brief Scenario Now you have setup your blog, it’s time to get into the detail. You now need to
+                critically review your website.</p>
+        </article>
+    </section>
+    <div id="containerMain">
+        <section>
+                <button class="accordion">Q: 2.1 Review the ongoing use of IT tools and change approach as needed – in
+                    making your own website, are you happy with the tools you used?
+                    Trello</button>
+                <div class="panel">
+                    <p class="heading-one-italics">E.g. Visual Studio Code, Codepen, Trello</p>
+                    <p>
+                    </p>
+                </div>
+                <button class="accordion">Q: 2.2 Describe whether the IT tools selected were appropriate</button>
+                <div class="panel">
+                    <p class="heading-one-italics">E.g. Visual Studio Code, Codepen, Trello</p>
+                    <p>
+                    </p>
+                </div>
+                <button class="accordion">Q: 2.3 Assess the strengths and weaknesses of your final project</button>
+                <div class="panel">
+                    <p class="heading-one-italics">-are you happy with your website? Why? Why not? You should review it
+                        on the website itself in the interests of openness. What would you change??</p>
+                    <p></p>
+                </div>
+                <button class="accordion">Q: 2.4 Describe further improvements you can make to your project</button>
+                <div class="panel">
+                    <p class="heading-one-italics">-</p>
+                    <p>
+                    </p>
+                </div>
+                <button class="accordion">Q: 2.5 Review outcomes to make sure they match requirements and are fit for
+                    purpose</button>
+                <div class="panel">
+                    <p>
+                    </p>
+                </div>
+                <button class="accordion">Q: 3.1 Review the benefits and drawbacks of IT tools and systems used in terms of productivity and efficiency</button>
+                <div class="panel">
+                    <p class="heading-one-italics">E.g. Visual Studio Code, Codepen, Trello</p>
+                    <p>
+                    </p>
+                </div>
+                <button class="accordion">Q: 3.2 Describe ways to improve productivity and efficiency</button>
+                <div class="panel">
+                    <p class="heading-one-italics">E.g. Visual Studio Code, Codepen, Trello</p>
+                    <p>
+                    </p>
+                </div>
+                <button class="accordion">Q: 3.3 Develop solutions to improve own productivity using IT in digital projects</button>
+                <div class="panel">
+                    <p class="heading-one-italics">- what would you do differently next time? Team work? Use of Slack?</p>
+                    <p>
+                    </p>
+                </div>
+                <button class="accordion">Q: 3.3 Develop solutions to improve own productivity using IT in digital projects</button>
+                <div class="panel">
+                    <p class="heading-one-italics">- what would you do differently next time? Team work? Use of Slack?</p>
+                    <p>
+                    </p>
+                </div>
+                <button class="accordion">Q: 3.4 Describe how you would go about testing digital solutions</button>
+                <div class="panel">
+                    <p class="heading-one-italics"></p>
+                    <p>
+                    </p>
+                </div>
+    </div>
+    </section>
+    <script src="myscripts.js">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
