@@ -29,10 +29,9 @@ h2,h3, a {
 .bullett ul {
 	list-style: none;
 }
-.bullett li::before {
+.bullett li:before {
 	color: #34495e;
 	width: 1em;
-	margin-left: -1em
 }
 .logo a, .main-nav a {
 	padding: 10px 15px;
