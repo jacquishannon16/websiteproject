@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota+Text|Lato|Noto+Serif&display=swap');
+/*Noto Serif - font*/
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h2,h3, a {
+	color: #34495e;
+}
+.float-right-text h2 {
+  text-align: right;
+  margin: 0;
+  padding: 5px 30px 5px 5px;
+}
+
+a {
+	text-decoration: none;
+}
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.logo a, .main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+.main-nav a:hover {
+	color: #718daa;
+}
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+}
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+  /*accordian for questions*/
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    transition: 0.4s;
+	font-weight: 600;
+	margin: 10px 16px;
+	max-width: 80%;
+  }
+ .accordion:hover {
+    background-color: #ccc;
+  }
+.accordion:after {
+    content: '\002B';
+    color:grey;
+    font-size: 1.5em;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+   .active:after {
+    content: "\2212";
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    font-family: "LatoLatin",Arial,sans-serif;
+    max-height: 0;
+    overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	max-width: 80%;
+  }
+/* body a:link, body a:visited  {
+    color: #06c;
+    text-decoration: underline; } */
+
+ .heading-one-italics  {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1em;
+}
+h1 {
+    font-size: 2em; /* common*/
+    padding: 4px 16px;
+}
+h2 {
+    font-size: 1.5em;
+    padding: 4px 16px;
+}
+h3 {
+    font-size: ;
+    padding: 4px 16px;
+}
+h4 {
+    font-size: ;
+    padding: 4px 16px;
+}
+h5 {
+    font-size: ;
+    padding: 4px 16px;
+}
+/*Heading with a right align*/
+div .section-heading-right {
+    clear: both;
+}
+
+.section-heading-right {
+  font-size: 4em;
+  color: blue;
+  font-family:"Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+ 
+/* ================================= 
+  Contact Form
+==================================== */
+
+#containerForm {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+.containerForm {
+	max-width:600px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] 
+{ font:400 0.8em "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contactForm {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #444;
+	display: block;
+	font-size: 2em;
+    font-weight: 600;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
+}
+
+#contact h4 {
+	margin:10px 0;
+	display:block;
+    font-size: 1.3em;
+    padding: 6px 0;
+    text-align: left;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact  input[type="text"], #contact  input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contactForm textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:50%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:1em;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+#intro-wrapper {
+	display: flex;
+	background-color: #f2f2f2;
+  }
+  #left-intro {
+	flex: 0 0 50%;
+	border: none;
+	margin: 20px;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  #right-intro {
+	flex: 1;
+	border: none;
+	margin:20px;
+	padding: 10px;
+  }
+  .intro-text {
+	font-family: 'Noto Serif', serif;
+  }
