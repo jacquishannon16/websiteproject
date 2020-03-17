@@ -10,9 +10,16 @@ body {
 	margin: 0;
 	min-height: 100vh;
 }
-ul {
-  margin: 3;
-  padding: 0.50em;
+	ul 
+	{
+	list-style: none;
+}
+
+li::before {
+	content: "•"; color: #34495e;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em
 }
 h2,h3, a {
 	color: #34495e;
@@ -22,7 +29,6 @@ h2,h3, a {
   margin: 0;
   padding: 5px 30px 5px 5px;
 }
-
 .logo {
 	margin: 0;
 	font-size: 1.45em;
@@ -36,7 +42,6 @@ h2,h3, a {
 	text-align: center;
 	display: block;
 }
-
 #containerNav ul {
 	margin: 0;
 	padding: 0;
@@ -49,7 +54,6 @@ h2,h3, a {
 }
 #containerNav .main-nav a:hover {
 	color: #718daa;
-	
 }
 .header {
 	padding-top: .5em;
@@ -93,7 +97,7 @@ h2,h3, a {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 1.1250em;
     width: 100%;
     border: none;
     text-align: left;
@@ -101,7 +105,7 @@ h2,h3, a {
     font-size: 1em;
     transition: 0.4s;
 	font-weight: 600;
-	margin: 10px 16px;
+	margin: 0.3125em 1em;
 	max-width: 80%;
   }
  .accordion:hover {
@@ -113,18 +117,19 @@ h2,h3, a {
     font-size: 1.5em;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
+    margin-left: 0.3750em;
   }
    .active:after {
     content: "\2212";
   }
   .panel {
+	font-family: "LatoLatin",Arial,sans-serif;
     padding: 0 18px;
     background-color: white;
-    font-family: "LatoLatin",Arial,sans-serif;
     max-height: 0;
     overflow: hidden;
 	transition: max-height 0.2s ease-out;
+	margin: 0.3750em;
 	max-width: 80%;
   }
 body a:link, body a:visited  {
