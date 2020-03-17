@@ -18,7 +18,7 @@ body {
 	display: flex;
 	margin: 1.250em;
 	flex-direction: column;
-
+	font-family: 'Noto Serif', serif;
 }
 #intro-wrapper-photo {
 	display: flex;
