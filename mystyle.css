@@ -10,7 +10,20 @@ body {
 	margin: 0;
 	min-height: 100vh;
 }
+#containerMain 	{
+	display: flex;
+	flex-direction: column;
+}
+#intro-wrapper {
+	display: flex;
+	margin: 1.250em;
+	flex-direction: column;
 
+}
+#intro-wrapper-photo {
+	display: flex;
+	background-color: #ffffff;
+  }
 h2,h3, a {
 	color: #34495e;
 }
@@ -89,7 +102,10 @@ h2,h3, a {
 		justify-content: space-between;
 	}
 }
-  /*accordian for questions*/
+
+/* ================================= 
+  Accordian for Questions and AnswersS
+==================================== */
   .accordion {
     background-color: #eee;
     color: #444;
@@ -282,7 +298,7 @@ fieldset {
 :-ms-input-placeholder {
  color:#888;
 }
-#intro-wrapper {
+#intro-wrapper-photo {
 	display: flex;
 	background-color: #f2f2f2;
   }
