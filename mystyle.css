@@ -325,3 +325,9 @@ fieldset {
 	padding: 4px 16px;
 	color:#34495e;
   }
+.heading-job-title-two {
+	ont-family: 'Noto Serif', serif;
+	font-size: 1.6em; /* common*/
+	padding: 4px 16px;
+	color:#34495e;
+}
