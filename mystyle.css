@@ -15,16 +15,16 @@ body {
 	flex-direction: column;
 	min-height: 100%;
     margin-bottom: -50px;
-
 }
 .footer,
 .push {
-   background-color: white;
+   background-color: whitesmoke;
    height: 100px;
 }
 .footerLinks {
-  background-color: whitesmoke;
+  background-color: blue;
 }
+/* Social Media Icons*/
 .fa {
 	padding: 20px;
 	font-size: 30px;
@@ -46,7 +46,6 @@ body {
 	background: #3B5998;
 	color: white !important;
   }
-  
   /* Twitter */
   .fa-twitter {
 	background: #55ACEE;
@@ -143,9 +142,9 @@ h2,h3, a {
 	}
 }
 
-/* ================================= 
+/* ==================================== 
   Accordian for Questions and Answers
-==================================== */
+======================================= */
   .accordion {
     background-color: #eee;
     color: #444;
@@ -203,15 +202,15 @@ h2 {
     padding: 4px 16px;
 }
 h3 {
-    font-size: ;
+    font-size: 1em;
     padding: 4px 16px;
 }
 h4 {
-    font-size: ;
+    font-size: 0.90em;
     padding: 4px 16px;
 }
 h5 {
-    font-size: ;
+    font-size: 0.80em;
     padding: 4px 16px;
 }
 /*Heading with a right align*/
