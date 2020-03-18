@@ -319,3 +319,9 @@ fieldset {
   .intro-text {
 	font-family: 'Noto Serif', serif;
   }
+  .heading-job-title {
+	font-family: 'Noto Serif', serif;
+	font-size: 2em; /* common*/
+	padding: 4px 16px;
+	color:#34495e;
+  }
