@@ -24,17 +24,59 @@
         <h1>Unit 2: Website Software</h1>
         <h1>Project: 1</h2>
             <section>
-                <h3>Role : Technical Consultant</h2>
-                    <h4>The brief</h4>
+                <h1 class="heading-job-title">Role : Technical Consultant</h1>
+                    <h2 class="heading-job-title-two">The brief</h1>
             </section>
-
             <section>
                 <article>
-                    <h1>Outcome 1:</h1>
+                    <h1>Outcome 2: Outcome 1</h1>
                     <h2>Create structures and styles for a webpage</h2>
                 </article>
             </section>
+            <button class="accordion">Q: 1.1 Describing the content and layout for each page</button>
+            <div class="panel">
+                <p class="heading-one-italics">Further improvements you can make to your project</p>
+                <ul>
+                    <li>zzzz</li>
+                </ul> 
+            </div>
+            <button class="accordion">Q: 1.5 Describing copyright and other constraints affecting websites </button>
+            <div class="panel">
+               <ul>
+                   <li></li></ul>
+            </div>
+            <button class="accordion">Q: 1.6 Describing access issues that need taking into account - describe issues that people with disabilities may face when using webpages and how we can overcome them</button>
+            <div class="panel">
+               <ul>
+                   <li></li></ul>
+            </div>
+            <button class="accordion">Q: 1.7 Describe which are the appropriate filetypes for websites</button>
+            <div class="panel">
+               <ul>
+                   <li>CSS files - CSS files can help define font, size, color, spacing, border and location of HTML information on a web page,
+                        and can also be used to create a continuous look throughout multiple pages of a website.</li>
+                   <li>HTML files - It is used to format text, tables, images, and other content that is displayed on a webpage.
+                        HTML files are widely used on the web as most pages within static websites have an ".html" extension.</li>
+                   <li>JavaScript files-</li>
+                </ul>
+            </div>
+         
     </div>
+    <script src="myscripts.js">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
